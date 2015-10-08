@@ -43,24 +43,6 @@
     return neighbors;
   }
 
-  function getPath_internal(word1, word2, path, seen, nextWords) {
-    if (word1 === word2) {
-      return path.concat(word2);
-    }
-    var nextWord = nextWords.shift();
-
-    if (seen[nextWord]) {
-      return [];
-    }
-    seen[nextWord] = true;
-
-    var nextPath = getPath_internal(nextWord, word2, path, seen);
-    if (nextPath.length > 0) {
-      return nextPath;
-    }
-    return [];
-  }
-
   function getHeuristic(start, goal) {
     var smaller, bigger;
     if (start.length < goal.length) {

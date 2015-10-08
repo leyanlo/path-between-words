@@ -33,9 +33,7 @@
 <div class="ui middle aligned center aligned grid">
   <div class="column">
     <h2 class="ui teal image header">
-      <div class="content">
-        Path between Words
-      </div>
+      Path between Words
     </h2>
     <form name="form" class="ui large form" novalidate>
       <div class="ui segment">
@@ -73,7 +71,7 @@
               },
               {
                 type   : 'isWord',
-                prompt : 'Starting word is not in the dictionary'
+                prompt : 'Starting word &ldquo;{value}&rdquo; is not in the dictionary'
               }
             ]
           },
@@ -86,7 +84,7 @@
               },
               {
                 type   : 'isWord',
-                prompt : 'Ending word is not in the dictionary'
+                prompt : 'Ending word &ldquo;{value}&rdquo; is not in the dictionary'
               }
             ]
           }
