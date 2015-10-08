@@ -24,7 +24,7 @@
   <script src="pathBetweenWords.js"></script>
   <script>
     $.fn.form.settings.rules.isWord = function(value) {
-      return isWord(value);
+      return isWord(value.toLowerCase());
     };
   </script>
 </head>
@@ -108,7 +108,7 @@
     $form.addClass("loading");
     setTimeout(function() {
       $path = $( "#path" );
-      var path = getPath($("#start").val(), $("#goal").val());
+      var path = getPath($("#start").val().toLowerCase(), $("#goal").val().toLowerCase());
       var pathText;
       if (path.length === 0) {
         pathText = "No path could be found."
