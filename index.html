@@ -93,6 +93,7 @@
       });
   $( "form" ).submit(function( event ) {
     event.preventDefault();
+    $(":submit").blur();
 
     var $form = $("form");
     var $path;
