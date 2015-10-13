@@ -109,7 +109,10 @@
     $form.addClass("loading");
     setTimeout(function() {
       $path = $( "#path" );
-      var path = getPath($("#start").val().toLowerCase(), $("#goal").val().toLowerCase());
+      var path = getPath(
+          $("#start").val().toLowerCase().trim(),
+          $("#goal").val().toLowerCase().trim()
+      );
       var pathText;
       if (path.length === 0) {
         pathText = "No path could be found."
