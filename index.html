@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-  <title>Path between Words</title>
+  <title>Word Path</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.4/semantic.min.css"/>
   <style type="text/css">
     body {
@@ -22,7 +22,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.4/semantic.min.js"></script>
   <script src="dictionary.js"></script>
-  <script src="pathBetweenWords.js"></script>
+  <script src="wordpath.js"></script>
   <script>
     $.fn.form.settings.rules.isWord = function(value) {
       return isWord(value.toLowerCase());
@@ -34,7 +34,7 @@
 <div class="ui middle aligned center aligned grid">
   <div class="column">
     <h2 class="ui teal image header">
-      Path between Words
+      Word Path
     </h2>
     <form name="form" class="ui large form" novalidate>
       <div class="ui segment">
