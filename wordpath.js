@@ -92,7 +92,7 @@
       for (i=1; i<openSet.length; i++) {
         if (fScore[openSet[i]] && fScore[openSet[i]] < fScore[current]) {
           current = openSet[i];
-          currentIndex = 0;
+          currentIndex = i;
         }
       }
       openSet.splice(currentIndex, 1);
