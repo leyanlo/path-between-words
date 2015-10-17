@@ -9,5 +9,5 @@ with open('dictionary.js', 'w') as fout:
                 else:
                     fout.write(',')
                 fout.write(line.rstrip())
-                fout.write(':true')
+                fout.write(':1')
     fout.write('};')
